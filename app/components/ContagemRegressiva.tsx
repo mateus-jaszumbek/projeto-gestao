@@ -73,15 +73,22 @@ export default function ContagemRegressiva() {
   }
 
   return (
-    <section className="relative py-24 px-6 bg-gradient-to-br from-indigo-900 via-blue-900 to-purple-900 overflow-hidden text-white">
+    <section className="relative py-44 px-6 bg-gradient-to-br from-indigo-900 via-blue-900 to-purple-900 overflow-hidden text-white">
       {/* Fundo futurista animado */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute w-[400px] h-[400px] rounded-full bg-blue-700/20 -top-20 -left-20 animate-pulse"></div>
         <div className="absolute w-[300px] h-[300px] rounded-full bg-purple-700/20 -bottom-20 -right-10 animate-pulse"></div>
         <div className="absolute w-[600px] h-[600px] border border-white/10 rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 animate-spin-slow"></div>
       </div>
-
       <div className="relative max-w-6xl mx-auto text-center">
+
+        <h1 className="text-4xl md:text-5xl font-extrabold text-blue-200 mb-2 drop-shadow-lg">
+          Bem-vindo ao Encontro Anual GBBS 2025
+        </h1>
+        <p className="text-gray-300 mb-12 drop-shadow-md">
+          Prepare-se para uma experiência inesquecível! A contagem regressiva para o nosso encontro em Curitiba já começou.
+        </p>
+
         <h3 className="text-3xl md:text-4xl font-extrabold mb-12 tracking-wide text-blue-300 drop-shadow-lg">
           Contagem Regressiva
         </h3>

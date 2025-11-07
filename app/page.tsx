@@ -12,13 +12,8 @@ export default function EventoPage() {
     <>
       <NavbarEvento />
 
-      <section id="inicio" className="pt-24 text-center bg-blue-50 py-20">
-      <h1 className="text-4xl font-bold text-blue-700 mb-4">
-          Bem-vindo ao Encontro Anual GBBS 2025
-        </h1>
-        <p className="max-w-2xl mx-auto text-gray-700">
-          Prepare-se para uma experiência inesquecível! A contagem regressiva para o nosso encontro em Curitiba já começou.
-        </p>
+      <section id="inicio" className="text-center bg-blue-50">
+
 
         <ContagemRegressiva />
 
