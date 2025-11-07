@@ -14,7 +14,7 @@ import {
 interface InfoItem {
   title: string;
   content: string;
-  icon: React.ReactNode; // adiciona o ícone
+  icon: React.ReactNode;
 }
 
 const informacoes: InfoItem[] = [
@@ -22,32 +22,32 @@ const informacoes: InfoItem[] = [
     title: "Posso escolher meu ou minha colega de quarto durante a hospedagem?",
     content:
       "Pode sim! A escolha será feita aqui no hotsite e seu ou sua colega receberá um convite no Whatsapp.",
-    icon: <Home className="w-5 h-5 text-white" />,
+    icon: <Home className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" />,
   },
   {
     title:
       "Tem alguma Política no GB relacionada ao deslocamento de mães lactantes?",
     content:
       "Sim, basta entrar em contato com a Premier pelo Whatsapp (41) 3795-2043. A equipe passará as orientações necessárias.",
-    icon: <Phone className="w-5 h-5 text-white" />,
+    icon: <Phone className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" />,
   },
   {
     title: "Haverá reembolso para as pessoas que estarão em deslocamento?",
     content:
       "Para alimentação durante a viagem (no percurso até o evento e no retorno para a cidade) deverá ser utilizado o reembolso, conforme Política de Viagens do GB.",
-    icon: <DollarSign className="w-5 h-5 text-white" />,
+    icon: <DollarSign className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" />,
   },
   {
     title: "Quem devo procurar em caso de dúvidas sobre o meu deslocamento?",
     content:
       "Entre em contato com a Premier pelo Whatsapp (41) 3795-2043. A equipe passará as orientações necessárias.",
-    icon: <Phone className="w-5 h-5 text-white" />,
+    icon: <Phone className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" />,
   },
   {
     title: "Qual a Política de reembolso para despesas extras?",
     content:
       "O reembolso de despesas extras como lavanderia, deve ser solicitado no seu respectivo centro de custos.",
-    icon: <DollarSign className="w-5 h-5 text-white" />,
+    icon: <DollarSign className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" />,
   },
 ];
 
@@ -80,11 +80,11 @@ export default function AccordionFAQ() {
                 <div className="flex items-center gap-3">
                   {/* Ícone de acordo com o tema */}
                   {info.icon}
-                  <span className="text-lg">{info.title}</span>
+                  <span className="text-lg sm:text-xl md:text-lg">{info.title}</span>
                 </div>
 
                 {/* Ícones animados de abrir/fechar */}
-                <div className="relative w-6 h-6">
+                <div className="relative w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8">
                   <AnimatePresence mode="wait" initial={false}>
                     {!isOpen ? (
                       <motion.div
@@ -95,7 +95,7 @@ export default function AccordionFAQ() {
                         transition={{ duration: 0.3 }}
                         className="absolute inset-0 flex items-center justify-center"
                       >
-                        <Plus className="w-6 h-6 text-white" />
+                        <Plus className="w-full h-full text-white" />
                       </motion.div>
                     ) : (
                       <motion.div
@@ -106,7 +106,7 @@ export default function AccordionFAQ() {
                         transition={{ duration: 0.3 }}
                         className="absolute inset-0 flex items-center justify-center"
                       >
-                        <ChevronUp className="w-6 h-6 text-white" />
+                        <ChevronUp className="w-full h-full text-white" />
                       </motion.div>
                     )}
                   </AnimatePresence>
