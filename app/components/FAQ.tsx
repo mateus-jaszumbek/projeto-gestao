@@ -88,15 +88,15 @@ export default function AccordionFAQ() {
                   <AnimatePresence mode="wait" initial={false}>
                     {!isOpen ? (
                       <motion.div
-                        key="plus"
-                        initial={{ opacity: 0, rotate: -90, scale: 0.5 }}
-                        animate={{ opacity: 1, rotate: 0, scale: 1 }}
-                        exit={{ opacity: 0, rotate: 90, scale: 0.5 }}
-                        transition={{ duration: 0.3 }}
-                        className="absolute inset-0 flex items-center justify-center"
-                      >
-                        <Plus className="w-6 h-6 text-white" />
-                      </motion.div>
+                      key="plus"
+                      initial={{ opacity: 0, rotate: -90, scale: 0.5 }}
+                      animate={{ opacity: 1, rotate: 0, scale: 1 }}
+                      exit={{ opacity: 0, rotate: 90, scale: 0.5 }}
+                      transition={{ type: "tween", duration: 0.3 }}
+                      className="absolute inset-0 flex items-center justify-center"
+                    >
+                      <Plus className="w-6 h-6 text-white" />
+                    </motion.div>
                     ) : (
                       <motion.div
                         key="chevron"
